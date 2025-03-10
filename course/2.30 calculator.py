@@ -10,7 +10,7 @@ while True:
         if primer[1] not in '+-/*':
             raise ZeroDivisionError('Это не действие')
     except ZeroDivisionError:
-        print('Не корректное действие, попробуйте снова')
+        print('Некорректное действие, попробуйте снова')
         continue
     except:
         print('Вы ввели не числа, либо ввели не через пробел, попробуйте снова')
