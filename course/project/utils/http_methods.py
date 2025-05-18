@@ -12,7 +12,7 @@ class Http_methods:
 
     @staticmethod
     def post(url, body):
-        return requests.post(url, json=body, headers=Http_methods.headers, cookies=Http_methods.cookie)
+        return requests.post(url, json=body, headers=Http_methods.headers, cookies=Http_methods.cookie, verify=False)
 
     @staticmethod
     def put(url, body):
@@ -20,4 +20,4 @@ class Http_methods:
 
     @staticmethod
     def delete(url, body):
-        return requests.delete(url, json=body, headers=Http_methods.headers, cookies=Http_methods.cookie)
+        return requests.delete(url, json=body, headers=Http_methods.headers, cookies=Http_methods.cookie, verify=False)

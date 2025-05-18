@@ -56,6 +56,6 @@ class Google_maps_api():
 
     @staticmethod
     def delete_place(place_id):
-        json= {'place_id': place_id}
+        json = {'place_id': place_id}
         resource = '/maps/api/place/delete/json'
         return Http_methods.delete(Google_maps_api.create_full_url(resource), json)

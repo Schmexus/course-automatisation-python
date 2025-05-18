@@ -1,6 +1,8 @@
+import json
+
 import requests
 
-url = "https://reqres.in/api/users/3"
+url = "https://catfact.ninja/facts?max_length=100&limit=5"
 
 headers = {
     "x-api-key": "reqres-free-v1"
@@ -13,7 +15,7 @@ json_put = [
     }
 ]
 
-response = requests.put(url,headers=headers, json=json_put, verify=False)
-data = response.json()
+response = requests.get(url,headers=headers, verify=False)
+data = response.text
 
-print(f"[{data}]")
+print(f"{list(json.loads(data))}")
