@@ -1,8 +1,10 @@
 from project.utils.api import Google_maps_api
 from project.utils.http_methods import Http_methods
+import allure
 from project.utils.checking import Check
 
 """Создание изменения и удаления новой локации"""
+@allure.epic
 class Test_create_place():
 
     def test_new_place(self):
