@@ -24,6 +24,7 @@ class Alphabet:
 
 
 
+
 class Cyrillic(Alphabet):
     """Языки группы Кириллица"""
 
