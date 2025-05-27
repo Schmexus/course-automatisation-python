@@ -1,6 +1,5 @@
 import requests
 from faker import Faker
-
 from project.utils.http_methods import Http_methods
 
 """Методы для тестирования гугл карт апи"""

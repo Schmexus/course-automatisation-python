@@ -1,20 +1,20 @@
-# films = input().split('')
-# print(films)
+# movies = input().split('')
+# print(movies)
 
-# films = input().split()
-# print(films[1]+films[3])
+# movies = input().split()
+# print(movies[1]+movies[3])
 
-# films = input().split()
-# films.pop(-2)
-# print(films)
+# movies = input().split()
+# movies.pop(-2)
+# print(movies)
 
-# films = input().split()
-# films.append(films[2])
-# print(films)
+# movies = input().split()
+# movies.append(movies[2])
+# print(movies)
 
-# films = input().split()
-# films.insert(3, 'Титаник')
-# print(films)
+# movies = input().split()
+# movies.insert(3, 'Титаник')
+# print(movies)
 
 numbers = [1, 2.5, 5, 7, 8, 3.9]
 numbers.sort()
