@@ -24,3 +24,16 @@ def kolvo_glasnih(string):
 
 string = input('Введите строку: ')
 print(kolvo_glasnih(string))
+
+
+def rand_massiv():
+    massiv = set()
+    while massiv.__len__() !=9:
+        massiv.add(random.randint(1,50))
+    massiv = list(massiv)
+    for i,v in enumerate(massiv):
+        if i%3==0:
+            print('\n')
+            print(v, massiv[i+1], massiv[i+2])
+
+rand_massiv()
